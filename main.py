@@ -21,14 +21,15 @@ def handle_events ():
 
 def main():
     screen = init_game()
-    clock = pygame.time.Clock() #Initialize the clock here
+    clock = pygame.time.Clock() # Initialize the clock here
+
     running = True
     while running:
         running = handle_events()
         screen.fill(config.WHITE) # Use color from config
         pygame.display.flip()
 
-        # Limit the frame rate to the specifiied frames per second (FPS) clock.tick(config.FPS) # Use the clock to control the frame rate
+        # Limit the frame rate to the specified frames per second (FPS) 
         clock.tick(config.FPS)
 
     
